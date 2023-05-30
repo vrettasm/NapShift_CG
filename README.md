@@ -4,6 +4,8 @@
 
 This repository provides a "Python implementation" of the NapShift-CG (CG: Coarse Grain)
 program to estimate the backbone atoms' chemical shift values from martinized PBD files.
+It is based on the already published and tested NapShift program that works on full atomistic
+proteins. For more information have a look at: https://github.com/vrettasm/NapShift.git.
 
 M. Vrettas, PhD.
 
@@ -33,13 +35,13 @@ It is highly advised to create a separate virtual environment to avoid
 messing with the main Python installation. On Linux and macOS systems
 type:
 
-    $ python3 -m venv napshift_venv
+    $ python3 -m venv napshift_cg_venv
 
-Note: "napshift_venv" is an _optional_ name.
+Note: "napshift_cg_venv" is an _optional_ name.
 
 Once the virtual environment is created activate it with:
 
-    $ source napshift_venv/bin/activate
+    $ source napshift_cg_venv/bin/activate
 
 Make sure **pip** is updated:
 
@@ -55,17 +57,10 @@ or
 
 N.B. For Windows systems follow the **equivalent** instructions.
 
-## For Conda users
-
-A conda environment_napshift.yml file is provided with all the required dependencies.
-
-    $ conda env create -f environment_napshift.yml
-    $ conda activate venv_napshift
-
 ## How to run
 
 To execute the program (within the activated virtual environment), you can either
-navigate  to the main directory of the project (i.e. where the napshift.py is located),
+navigate to the main directory of the project (i.e. where the napshift_cg.py is located),
 or locate it through the command line and then run the following command:
 
     $ ./napshift_cg.py -f path/to/filename.pdb
