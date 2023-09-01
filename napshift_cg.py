@@ -169,7 +169,7 @@ if __name__ == "__main__":
                             help="Print version information and exit.")
 
         # Make sure the defaults are set.
-        parser.set_defaults(talos=True, verose=False, all_models=False)
+        parser.set_defaults(talos=True, verbose=False)
 
         # Parse the arguments.
         args = parser.parse_args()
