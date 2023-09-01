@@ -135,14 +135,18 @@ class CoarseGrainStructure(object):
             # Process line-by-line.
             for row in f_in.readlines():
 
+                # Convert the row in upper case.
+                row = row.upper()
+
                 # Make sure we capture any exceptions.
                 try:
 
                     # Get the first entry in the line.
-                    entry = str(row[0:6]).strip().upper()
+                    entry = str(row[0:6]).strip()
 
                     # Break when you reach the end of the model.
                     if entry in break_list:
+
                         # Exit the loop.
                         break
                     else:
@@ -151,15 +155,15 @@ class CoarseGrainStructure(object):
                         if entry == "ATOM":
 
                             # Get the chain id separately.
-                            chain_id = str(row[21]).upper()
+                            chain_id = str(row[21])
 
                             # Create a new row for the list.
                             # NOTE: The "key" names should be identical
                             # to the CoarseGrainEntity input fields __init__.
                             record = {"num_id": int(row[6:11]),
-                                      "atom_type": str(row[12:16]).strip().upper(),
-                                      "res_name": str(row[17:20]).strip().upper(),
-                                      "chain_id": str(row[21]).upper(),
+                                      "atom_type": str(row[12:16]).strip(),
+                                      "res_name": str(row[17:20]).strip(),
+                                      "chain_id": str(row[21]),
                                       "res_id": int(row[22:26]),
                                       "res_x": float(row[30:38]),
                                       "res_y": float(row[38:46]),
