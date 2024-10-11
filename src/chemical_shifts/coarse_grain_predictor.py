@@ -294,7 +294,7 @@ class CoarseGrainCSPredictor(object):
                     # Extract the information.
                     index, res_name, res_id = peptide
 
-                    # Convert the name from 3 to 1 letters.
+                    # Convert the name from 3 to 1 letter.
                     res_name_1 = RES_3_TO_1[res_name]
 
                     # Search link.
@@ -374,14 +374,12 @@ class CoarseGrainCSPredictor(object):
         """
         Exponential Linear Unit.
 
-        Auxiliary function that returns the elu(x)
-        for a given input vector 'x'.
+        Auxiliary function that returns the elu(x) for a given input vector 'x'.
 
         :param x: the input values for the NN.
 
-        :param alpha: Scale parameter that controls the
-        value to which an ELU saturates for negative net
-        inputs. Default is 1.0.
+        :param alpha: Scale parameter that controls the value to which an ELU
+        saturates for negative net inputs. Default is 1.0.
 
         :return: Elu(x).
         """
@@ -389,10 +387,10 @@ class CoarseGrainCSPredictor(object):
         f_out = np.array(x, copy=True)
 
         # Find the negative values (indexes).
-        neg_ = (x < 0.0)
+        neg_idx = (x < 0.0)
 
         # Update only the negative values.
-        f_out[neg_] = alpha * np.expm1(x[neg_])
+        f_out[neg_idx] = alpha * np.expm1(x[neg_idx])
 
         # NOTE (from the documentation):
         # Function "expm1(x)" provides greater precision
@@ -400,7 +398,6 @@ class CoarseGrainCSPredictor(object):
 
         # Return the ELU.
         return f_out
-
     # _end_def_
 
     # Neural Network output function.
@@ -615,7 +612,6 @@ class CoarseGrainCSPredictor(object):
         of the "predict" method.
         """
         return self.predict(*args, **kwargs)
-
     # _end_def_
 
     # Auxiliary.
