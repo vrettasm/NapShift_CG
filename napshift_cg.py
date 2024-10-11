@@ -13,8 +13,8 @@ from src.chemical_shifts.coarse_grain_predictor import CoarseGrainCSPredictor
 
 # INFO:
 __version__ = '0.0.1'
-__author__ = 'Michail Vrettas, PhD'
-__email__ = 'vrettasm@duck.com'
+__author__ = 'Michalis Vrettas, PhD'
+__email__ = 'vrettasm@gmail.com'
 
 
 # Main function.
