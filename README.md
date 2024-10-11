@@ -1,4 +1,4 @@
-# NapShift (version 0.0.1)
+# NapShift-CG
 
 ![Logo](./logos/NapShift_CG_logo.png)
 
