@@ -20,14 +20,14 @@ computer.
 
 2. Alternatively one can clone the project directly using git as follows:
 
-    `$ git clone https://github.com/vrettasm/NapShift_CG.git`
+    `git clone https://github.com/vrettasm/NapShift_CG.git`
 
 ## Required packages
 
 The minimum version is **Python 3.7** (recommended >=3.8). The required packages
 are given in the "requirements.txt": To simplify the installation of the packages just use:
 
-    $ pip install -r requirements.txt
+      pip install -r requirements.txt
 
 ## Virtual environment (recommended)
 
@@ -35,25 +35,25 @@ It is highly advised to create a separate virtual environment to avoid
 messing with the main Python installation. On Linux and macOS systems
 type:
 
-    $ python3 -m venv napshift_cg_venv
+      python3 -m venv napshift_cg_venv
 
 Note: "napshift_cg_venv" is an _optional_ name.
 
 Once the virtual environment is created activate it with:
 
-    $ source napshift_cg_venv/bin/activate
+      source napshift_cg_venv/bin/activate
 
 Make sure **pip** is updated:
 
-    $ python3 -m pip install --upgrade pip
+      python3 -m pip install --upgrade pip
 
 Then we can install all the requirements as above:
 
-    $ pip install -r requirements.txt
+      pip install -r requirements.txt
 
 or
 
-    $ python3 -m pip install -r requirements.txt
+      python3 -m pip install -r requirements.txt
 
 N.B. For Windows systems follow the **equivalent** instructions.
 
@@ -63,7 +63,7 @@ To execute the program (within the activated virtual environment), you can eithe
 navigate to the main directory of the project (i.e. where the napshift_cg.py is located),
 or locate it through the command line and then run the following command:
 
-    $ ./napshift_cg.py -f path/to/filename.pdb
+      ./napshift_cg.py -f path/to/filename.pdb
 
 This is the simplest way to run NapShift. It will create a file named:
 "prediction_filename_model_0_chain_A.tab" in the _current working directory_,
@@ -80,7 +80,7 @@ This will run NapShift on all the files (in the directory) with the '.pdb' exten
 
 To explore all the options of NapShift, use:
 
-    $ ./napshift_cg.py -h
+      ./napshift_cg.py -h
 
 You will see the following menu:
 
