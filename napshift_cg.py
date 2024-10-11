@@ -1,5 +1,3 @@
-#!/usr/bin/env python3 -O
-
 import sys
 
 # Check the current python version before running.
