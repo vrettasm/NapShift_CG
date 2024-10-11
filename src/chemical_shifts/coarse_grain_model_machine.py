@@ -1,7 +1,7 @@
 """
-This module includes the main classes that handle the training
-of the ANN models, for the reduced (MARTINI) datasets, as well
-as the predictions of the new chemical shifts.
+This module includes the main classes that handle the training of the ANN models,
+for the reduced (MARTINI) datasets, as well as the predictions of the new chemical
+shifts.
 """
 
 # Python import(s).
@@ -876,7 +876,7 @@ class CoarseGrainChemShiftPredictor(CoarseGrainChemShiftBase):
                     # Extract the information.
                     index, res_name, res_id = peptide
 
-                    # Convert the name from 3 to 1 letters.
+                    # Convert the name from 3 to 1 letter.
                     res_name_1 = RES_3_TO_1[res_name]
 
                     # Search link.
