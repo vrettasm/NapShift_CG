@@ -1,4 +1,4 @@
-# NapShift-CG
+# Reduced NapShift-CG
 
 ![Logo](./logos/NapShift_CG_logo.png)
 
