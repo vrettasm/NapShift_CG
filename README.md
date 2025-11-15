@@ -4,10 +4,22 @@
 
 This repository provides a "Python implementation" of the NapShift-CG (CG: Coarse Grain)
 program to estimate the backbone atoms' chemical shift values from martinized PBD files.
-It is based on the already published and tested NapShift program that works on full atomistic
+It is based on the published and tested NapShift program that works on full atomistic
 proteins. For more information have a look at: https://github.com/vrettasm/NapShift.git.
 
 M. Vrettas, PhD.
+
+## Comparison to the original full atomistic NapShift
+
+Here is presented a comparison of the RMSD, in ppm, between the original NapShift predicted
+chemical shifts (CS) and a set of experimental CS (from 250 test proteins) for varying input
+peptide lengths (1, 3, 5, and 7) to the NapShift. 
+![Logo](./logos/Original_NapShift.png)
+
+Below is presented the same comparison as above using the **reduced NapShift-CG** predicted
+chemical shifts (CS) and the experimental CS (on the same test proteins), for varying input
+peptide lengths (1, 3, 5, and 7) to the NapShift-CG.
+![Logo](./logos/CG_NapShift_results.png)
 
 ## Installation
 
