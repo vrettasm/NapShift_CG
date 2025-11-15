@@ -98,12 +98,6 @@ You will see the following menu:
 
 ![Help](./logos/help_menu.png)
 
-## References (and documentation)
-
-The original work is described in detail at:
-
-1. TBD.
-
 ### Contact
 
 For any questions/comments (**_regarding this code_**) please contact me at:
