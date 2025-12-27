@@ -2,7 +2,7 @@
 
 ![Logo](./logos/NapShift_CG_logo.png)
 
-This repository provides a "Python implementation" of the NapShift-CG (CG: Coarse Grain)
+This repository provides a standalone Python3 implementation of the NapShift-CG (CG: Coarse Grain)
 program to estimate the backbone atoms' chemical shift values from martinized PBD files.
 It is based on the published and tested NapShift program that works on full atomistic
 proteins. For more information have a look at: https://github.com/vrettasm/NapShift.git.
