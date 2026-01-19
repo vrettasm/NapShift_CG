@@ -2,14 +2,14 @@
 
 ![Logo](./logos/NapShift_CG_logo.png)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18290114.svg)](https://doi.org/10.5281/zenodo.18290114)
-
 This repository provides a standalone Python3 implementation of the **NapShift-CG** (CG: Coarse Grain)
 program to estimate the backbone atoms' chemical shift values from martinized PBD files.
 It is based on the published and tested NapShift program that works on full atomistic
 proteins. For more information have a look at [NapShift](https://github.com/vrettasm/NapShift).
 
 M. Vrettas, PhD.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18290114.svg)](https://doi.org/10.5281/zenodo.18290114)
 
 ## Comparison to the original full atomistic NapShift
 
